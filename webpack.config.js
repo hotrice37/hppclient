@@ -31,4 +31,17 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'bundle.js',
   },
+
+  devServer: {
+    port: 3000,
+    hot: true,
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        router: () => 'http://localhost:5000',
+        logLevel: 'debug' /*optional*/,
+      },
+    },
+  },
 };
