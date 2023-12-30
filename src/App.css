@@ -1,0 +1,123 @@
+/* App.css */
+
+/* Reset default margin and padding */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222222; /* Dark background */
+  color: #ffffff; /* White text for better contrast */
+}
+
+/* Container for the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  background-color: #333333; /* Darker container background */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+/* Title styles */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Input container styles */
+.input-container {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Label styles */
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+  display: block;
+}
+
+/* Input and select styles */
+input,
+select {
+  width: calc(100% - 24px);
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid #ff7f50;
+  transition: border-color 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #444444; /* Darker input background */
+}
+
+/* Update input background when they have values */
+input:not(:placeholder-shown),
+select {
+  background-color: #444444 !important;
+}
+
+input:hover,
+select:hover {
+  border-color: #87ceeb;
+}
+
+/* Unit styles */
+.unit {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Button styles */
+.btn {
+  padding: 14px 28px;
+  background-color: #ff7f50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #87ceeb;
+}
+
+/* Prediction message styles */
+.prediction {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  width: 100%;
+}
